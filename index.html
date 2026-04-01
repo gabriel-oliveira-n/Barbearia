@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Seleção de Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Barbearia HardPower</h1>
+        <p>Escolha os serviços desejados</p>
+    </header>
+
+    <main class="container">
+        <section class="servicos">
+            <div class="card">
+                <h2>Corte</h2>
+                <p>Corte masculino moderno e profissional.</p>
+                <span class="preco">R$ 35.00</span>
+                <button class="adicionar" data-nome="Corte" data-preco="35.00">Adicionar</button>
+            </div>
+
+            <div class="card">
+                <h2>Barba</h2>
+                <p>Modelagem e acabamento completo da barba.</p>
+                <span class="preco">R$ 25.00</span>
+                <button class="adicionar" data-nome="Barba" data-preco="25.00">Adicionar</button>
+            </div>
+
+            <div class="card">
+                <h2>Sobrancelha</h2>
+                <p>Alinhamento e acabamento na sobrancelha.</p>
+                <span class="preco">R$ 15.00</span>
+                <button class="adicionar" data-nome="Sobrancelha" data-preco="15.00">Adicionar</button>
+            </div>
+
+            <div class="card">
+                <h2>Hidratação</h2>
+                <p>Tratamento capilar para revitalização dos fios.</p>
+                <span class="preco">R$ 20.00</span>
+                <button class="adicionar" data-nome="Hidratação" data-preco="20.00">Adicionar</button>
+            </div>
+        </section>
+
+        <section class="pedido">
+            <h2>Serviços Selecionados</h2>
+            <ul id="lista-pedido"></ul>
+            <h3>Total: <span id="total">R$ 0.00</span></h3>
+            <button id="finalizar-pedido">Finalizar Pedido</button>
+            <button id="limpar">Limpar Pedido</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
