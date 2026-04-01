@@ -1,4 +1,4 @@
-💈 Barbearia Style - Sistema de Seleção de Serviços
+💈 Barbearia HardPower - Sistema de Seleção de Serviços
 📌 Descrição
 
 Este projeto foi desenvolvido como atividade prática de JavaScript com o objetivo de simular um sistema de seleção de serviços para uma barbearia.
