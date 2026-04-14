@@ -1,167 +1,165 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0; /* remove margens padrão de todos elementos */
+    padding: 0; /* remove espaçamento interno padrão */
+    box-sizing: border-box; /* faz largura/altura incluir padding e borda */
+    font-family: Arial, sans-serif; /* define a fonte padrão do site */
 }
 
 body {
-    background-color: #f5f5f5;
-    color: #222;
+    background-color: #f5f5f5; /* cor de fundo da página */
+    color: #222; /* cor padrão do texto */
 }
 
 header {
-    background-image: url("img/fundo.png");
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
+    background-image: url("img/fundo.png"); /* coloca imagem de fundo no header */
+    background-color: #111; /* cor de fundo caso a imagem não carregue */
+    color: white; /* cor do texto dentro do header */
+    text-align: center; /* centraliza o texto */
+    padding: 100px 20px; /* espaçamento interno (cima/baixo 100px, lados 20px) */
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* espaço abaixo do título */
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    width: 90%; /* ocupa 90% da largura da tela */
+    max-width: 1200px; /* largura máxima de 1200px */
+    margin: 30px auto; /* centraliza e dá espaço em cima/baixo */
+    display: flex; /* ativa o flexbox */
+    gap: 20px; /* espaço entre os elementos */
+    flex-wrap: wrap; /* permite quebrar linha se faltar espaço */
 }
 
 .servicos {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    flex: 2; /* ocupa mais espaço dentro do flex */
+    display: grid; /* usa grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* cria colunas responsivas */
+    gap: 20px; /* espaço entre os cards */
 }
 
 .card {
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    text-align: center;
+    background-color: white; /* fundo branco */
+    padding: 20px; /* espaçamento interno */
+    border-radius: 12px; /* bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* sombra suave */
+    text-align: center; /* centraliza conteúdo */
 }
 
 .card h2 {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* espaço abaixo do título */
 }
 
 .card p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    color: #555;
+    font-size: 14px; /* tamanho da fonte */
+    margin-bottom: 15px; /* espaço abaixo do texto */
+    color: #555; /* cor do texto mais clara */
 }
 
 .preco {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #0a7a2f;
+    display: block; /* ocupa linha inteira */
+    font-size: 18px; /* tamanho da fonte */
+    font-weight: bold; /* deixa em negrito */
+    margin-bottom: 15px; /* espaço abaixo */
+    color: #0a7a2f; /* cor verde */
 }
 
 button {
-    background-color: #111;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+    background-color: #111; /* cor de fundo do botão */
+    color: white; /* cor do texto */
+    border: none; /* remove borda padrão */
+    padding: 10px 16px; /* espaçamento interno */
+    border-radius: 8px; /* bordas arredondadas */
+    cursor: pointer; /* muda cursor para mãozinha */
+    transition: 0.3s; /* animação suave */
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #333; /* muda cor ao passar o mouse */
 }
 
 .pedido {
-    flex: 1;
-    min-width: 280px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    height: fit-content;
+    flex: 1; /* ocupa menos espaço que serviços */
+    min-width: 280px; /* largura mínima */
+    background-color: white; /* fundo branco */
+    padding: 20px; /* espaçamento interno */
+    border-radius: 12px; /* bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* sombra */
+    height: fit-content; /* altura ajusta ao conteúdo */
 }
 
 .pedido h2 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* espaço abaixo do título */
 }
 
 #lista-pedido {
-    list-style: none;
-    margin-bottom: 20px;
+    list-style: none; /* remove bolinhas da lista */
+    margin-bottom: 20px; /* espaço abaixo */
 }
 
 #lista-pedido li {
-    padding: 8px 0;
-    border-bottom: 1px solid #ddd;
-    font-size: 15px;
+    padding: 8px 0; /* espaçamento interno */
+    border-bottom: 1px solid #ddd; /* linha separadora */
+    font-size: 15px; /* tamanho da fonte */
 }
 
 #finalizar-pedido {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #111;
+    width: 100%; /* ocupa toda largura */
+    margin-top: 10px; /* espaço acima */
+    background-color: #111; /* cor do botão */
 }
 
 #limpar {
-    width: 100%;
-    margin-top: 10px;
-    background-color: #b22222;
+    width: 100%; /* ocupa toda largura */
+    margin-top: 10px; /* espaço acima */
+    background-color: #b22222; /* vermelho */
 }
 
 #limpar:hover {
-    background-color: #8b1a1a;
+    background-color: #8b1a1a; /* vermelho mais escuro no hover */
 }
 
 #contato {
-    text-align: center;
-    margin-top: 2rem;
-    color: #000000;
+    text-align: center; /* centraliza texto */
+    margin-top: 2rem; /* espaço acima */
+    color: #000000; /* cor preta */
 }
 
-
 .redes-sociais a {
-    display: inline-block;
-    background-color: #FFFFFF;
-    color: #2C2C2C;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    text-decoration: none;
-    margin: 0.5rem;
-    font-weight: 500;
-    transition: 0.3s;
+    display: inline-block; /* permite tamanho e espaçamento */
+    background-color: #FFFFFF; /* fundo branco */
+    color: #2C2C2C; /* cor do texto */
+    padding: 0.5rem 1rem; /* espaçamento interno */
+    border-radius: 6px; /* bordas arredondadas */
+    text-decoration: none; /* remove sublinhado */
+    margin: 0.5rem; /* espaço externo */
+    font-weight: 500; /* peso da fonte */
+    transition: 0.3s; /* animação */
 }
 
 .redes-sociais a:hover {
-    background-color: #7a7a7a;
-    color: #FFFFFF;
+    background-color: #7a7a7a; /* muda fundo ao passar mouse */
+    color: #FFFFFF; /* muda cor do texto */
 }
 
 .redes-sociais a:visited {
-    color: #ffffff;
+    color: #ffffff; /* cor quando já foi visitado */
 }
-
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
-    background-color: #2C2C2C;
-    color: #EDE0D4;
-    margin-top: 2rem;
+    text-align: center; /* centraliza texto */
+    padding: 1rem 0; /* espaçamento interno */
+    background-color: #2C2C2C; /* fundo escuro */
+    color: #EDE0D4; /* cor do texto */
+    margin-top: 2rem; /* espaço acima */
 }
 
-footer p a{
-    color: #9c9896;
+footer p a {
+    color: #9c9896; /* cor dos links dentro do footer */
 }
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-direction: column; /* muda layout para coluna em telas pequenas */
     }
 }
